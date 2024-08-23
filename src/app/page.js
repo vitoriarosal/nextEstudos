@@ -1,10 +1,19 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Button } from "react-bootstrap";
+import Cabecalho from "./components/Cabecalho";
+import Link from "next/link";
 
 export default function Home() {
   return (
-      <h1>Fundamentos</h1>
-      
-   
+    <main>
+      <Button variant="primary">Primary</Button>{' '}
+
+      <Cabecalho titulo="Orion" subtitulo="Agora" />
+      <Cabecalho titulo="Frontend" />
+      <Cabecalho titulo="Cabeçalho" />
+      <Cabecalho titulo="React" />
+
+      <Link href="/fundamentos">Página Fundamentos</Link><br />
+
+    </main>
   );
 }
